@@ -26,7 +26,7 @@ RUN cd nginx-$NGINX_VERSION && \
     ./configure --with-http_ssl_module --add-module=../fastdfs-nginx-module-master/src && \
     make -j4 && \
     make install && \
-    cp ../fastdfs-nginx-module-master/src/mod_fastdfs.conf /etc/fdfs/
+    cp ../fastdfs-nginx-module-master/src/mod_fastdfs.conf /etc/fdfs/mod_fastdfs.conf.sample
 
 RUN rm -rf /home/build
 

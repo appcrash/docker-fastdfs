@@ -80,10 +80,10 @@ replace_config_nginx_file() {
     done <<< $all_env
 }
 
-# rename all sample to .conf
+# copy all sample to .conf, so always build new config based on env variables
 for f in /etc/fdfs/*; do
     case "$f" in
-        *.sample) mv $f ${f%.*}; 
+        *.sample) cp $f ${f%.*}; 
     esac
 done
 

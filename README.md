@@ -1,2 +1,2 @@
 # docker-fastdfs
-fastdfs build for trackerd, stroraged and nginx
+fastdfs build for trackerd, storaged and nginx
